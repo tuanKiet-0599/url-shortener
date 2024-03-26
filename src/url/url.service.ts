@@ -20,7 +20,7 @@ export class UrlService {
         }
 
         const urlCode = nanoid(10);
-        const baseURL = 'http://localhost:3009';
+        const baseURL = 'http://localhost:3000';
 
         try {
             let url = await this.repo.findOneBy({ longUrl });
